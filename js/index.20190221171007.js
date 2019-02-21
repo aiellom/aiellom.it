@@ -4,9 +4,9 @@ $.fn.hasAttr = function(name) { var attr = $(this).attr(name); return typeof att
 
 $(document).ready(function() {
 r=function(){dpi=window.devicePixelRatio;$('.js').attr('src', (dpi>1) ? 'images/portrait5-350.jpg' : 'images/portrait5-175.jpg');
-
-
-};
+$('.js2').attr('src', (dpi>1) ? 'images/cover-272.jpg' : 'images/cover-136.jpg');
+$('.js3').attr('src', (dpi>1) ? 'images/2b-288.jpg' : 'images/2b-144.jpg');
+$('.js4').attr('src', (dpi>1) ? 'images/hsl-274.jpg' : 'images/hsl-137.jpg');};
 if(!window.HTMLPictureElement){r();}
 (function(){$('a[href^="#"]:not(.allowConsent,.noConsent,.denyConsent,.removeConsent)').each(function(){$(this).click(function(){var t=this.hash.length>1?$('[name="'+this.hash.slice(1)+'"]').offset().top:0;return $("html, body").animate({scrollTop:t},400),!1})})})();
 initMenu($('#m1')[0]);
